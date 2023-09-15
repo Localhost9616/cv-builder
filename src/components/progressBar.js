@@ -44,7 +44,7 @@ const ProgressBar = () => {
             <div className="step" id='step6'><div className='icon' id='icon-6'><img src={Img6} alt="" /></div></div>
             <div className="step" id='step7'><div className='icon' id='icon-7'><img src={Img7} alt="" /></div></div>
         </div>
-        <div className="download" id='download'><img src={Img8} alt="Error" /></div>
+        <div title='Coming soon' className="download" id='download'><img src={Img8} alt="Error" /></div>
         <div onClick={resetResume} className="resetResume" id='resetResume'><img src={Img9} alt="Error" /></div>
     </div>
   )
