@@ -1,0 +1,502 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+/* .page1, .header, .photoDiv, .data, .resume, input, .btnDiv, .slider, .container{
+    border: 2px solid red;
+} */
+.page1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.header{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    font-family: math;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #2e082e;
+    color: darkorange;
+}
+
+.photoDiv{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.resumeDiv{
+    height: 83%;
+    width: 100%;
+    display: flex;
+}
+.data{
+    width: 50%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    overflow-y: scroll;
+    font-family: math;
+}
+.resume{
+    width: 50%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+input{
+    width: 49%;
+    height: 36px;
+    border-radius: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 5px;
+    border: 1px solid darkgrey;
+}
+label{
+    width: 100%;
+}
+.resumeDiv > label{
+    width: 50%;
+}
+/* ::placeholder{
+    padding-left: 12px;
+} */
+#address, #linkedin, #jobTitle, #github{
+    width: 100%;
+}
+.btnDiv{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    height: 36px;
+    width: fit-content;
+    border-radius: 30px;
+    font-size: medium;
+    border: none;
+    outline: none;
+    background-color: bisque;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+.saveBtn{
+    margin-left: auto;
+}
+.btn:hover{
+    background-color: rgb(245, 218, 178);
+}
+.slider{
+    height: 8vh;
+}
+.personalInfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    position: relative;
+    background-color: #E1E4EA;
+}
+.resumePage{
+    height: 5in;
+    width: 3.53in;
+    padding: 0.3in;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    font-family: system-ui;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#textarea-1, #textarea-2{
+    width: 100%;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    /* margin-bottom: 3rem; */
+}
+.jobTitle{
+    width: 100%;
+}
+.summary{
+    padding-top: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+.summaryDiv{
+    display: flex;
+    height: 60%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.summaryDiv > p{
+    margin-bottom: 36px;
+}
+.experience, .education, .achievements, .project, .skillSection{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 16px;
+    display: none;
+}
+.addIcon{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 75%;
+}
+.addIcon > img{
+    height: 24px;
+    margin-right: 7px;
+}
+.achievements > form > input{
+    width: 100%;
+}
+.achievements{
+    height: 100%;
+    display: none;
+}
+.btn-2{
+    width: auto;
+    height: 32px;
+    border-radius: 16px;
+    background: #EEEDEF;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 26px;
+    font-size: medium;
+    flex-wrap: wrap;
+    padding-top: 3px;
+    border: 1px solid grey;
+}
+.tagsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.tagName{
+    margin-right: 12px;
+}
+#skills{
+    width: 30%;
+    height: 32px;
+    margin: 5px;
+    background-color: #EEEDEF;
+    border: none;
+    outline: none;
+}
+.tagsDiv > h3{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.wrapper3, .wrapper4, .headingDiv, .wrapper-5, .wrapper6{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.div1 > h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+.div1 > p{
+    font-size: 7.73px;
+    font-weight: 500;
+}
+span > img{
+    height: 5.15px;
+}
+.div2{
+    font-size: 5.15px;
+    margin-top: 2px;
+}
+.resumeheader{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.div2 > ul{
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    list-style: none;
+}
+.container{
+    display: flex;
+    font-size: 5.80px;
+}
+.Heading{
+    font-size: 11.14px;
+    font-weight: 500;
+}
+.leftSection{
+    width: 50%;
+}
+.rightSection{
+    width: 50%;
+    padding-left: 7%;
+}
+.progressBar{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 2;
+}
+.nav{
+    width: 40%;
+    height: 4px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: lightgray;
+}
+.step{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0px solid black;
+    position: absolute;
+    background-color: darkslategray;
+    left: -20px;
+}
+.step > div > img{
+    height: 70%;
+}
+#step2{
+    margin-left: 16.6%;
+}
+#step3{
+    margin-left: 33.2%;
+}
+#step4{
+    margin-left: 49.8%;
+}
+#step5{
+    margin-left: 66.4%;
+}
+#step6{
+    margin-left: 83%;
+}
+#step7{
+    margin-left: 100%;
+}
+#form, #resetEducation, #resetProject{
+    margin-top: 1.5rem;
+}
+.step > div{
+    height: 95%;
+    width: 93%;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: cornsilk;
+}
+hr{
+    margin-top: 0px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+.leftSection > *, .rightSection > *{
+    margin-bottom: 5px;
+}
+.leftSection > div > div, .rightSection > div > div{
+    margin-bottom: 5px;
+}
+.leftSection > div > div > *{
+    margin-bottom: 2px;
+}
+ul>li{
+    margin-bottom: 2px;
+    list-style: disc;
+    list-style-position: inside;
+}
+.div2>ul>li{
+    list-style: none;
+}
+.div2>ul>li>a{
+    text-decoration: none;
+}
+.projects > div > p{
+    margin-top: 2px;
+}
+ul>li>span{
+    font-weight: 700;
+}
+.company, .university{
+    font-weight: 700;
+}
+.div > a, .div > span{
+    font-weight: 700;
+}
+.experienceBar, .educationBar, .projectBar{
+    padding: 12px;
+    background-color: #ebe3e3;
+    margin-bottom: 8px;
+}
+.delete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.delete > img{
+    height: 20px;
+}
+.resume > button{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    z-index: 3;
+    opacity: 0.3;
+}
+#zoomOut:hover{
+    opacity: 1;
+}
+#zoomIn:hover{
+    opacity: 1;
+}
+#zoomOut{
+    left: 25px;
+}
+.photoDiv > img{
+    height: 100%
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.download > img{
+    height: 28px;
+} 
+.resetResume > img{
+    height: 22px;
+}
+.download{
+    position: absolute;
+    right: 150px;
+}
+.resetResume{
+    position: absolute;
+    right: 110px;
+}
+.resetResume:hover, .download:hover{
+    scale: 1.1;
+}
+.homepage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    /* background: url('https://png.pngtree.com/background/20210714/origin…ogy-concept-for-website-picture-image_1250295.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: math;
+    background: whitesmoke;
+}
+.textDiv{
+    height: 100%;
+    width: 75%;
+    /* border: 2px solid blue; */
+    padding-left: 58px;
+    padding-right: 188px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.txt{
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21px;
+}
+.txt > h1{
+    font-size: 60px;
+}
+.skewDiv{
+    height: 132%;
+    width: 60%;
+    border: 2px solid black;
+    transform: rotateZ(41deg);
+    border-radius: 78px;
+    position: absolute;
+    right: -274px;
+    background: black;
+}
+li span {
+    margin-left:-3px;
+}
+.link{
+    padding: 12px;
+    background: black;
+    margin-top: 30px;
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+}
+.link:hover{
+    background-color: #423737;
+}
+button > a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+
